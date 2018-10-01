@@ -1,10 +1,11 @@
 'use strict';
 
 var expect				= require('expect.js');
-var autoTestUtils		= require('./auto_test_utils');
-var requireAfterWrite	= autoTestUtils.requireAfterWrite('merge_translate_data');
+var testReq				= require('i18nc-test-req');
+var requireAfterWrite	= testReq('merge_translate_data');
 var mergeTranslateData	= require('../lib/merge_translate_data');
 var mergeArgsData		= require('./files/merge_translate_data.json');
+testReq.ROOT_PATH		= __dirname + '/files/';
 
 
 describe('#mergeTranslateData', function()
