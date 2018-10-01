@@ -5,7 +5,7 @@ var testReq				= require('i18nc-test-req');
 var requireAfterWrite	= testReq('merge_translate_data');
 var mergeTranslateData	= require('../lib/merge_translate_data');
 var mergeArgsData		= require('./files/merge_translate_data.json');
-testReq.ROOT_PATH		= __dirname + '/files/';
+testReq.ROOT_PATH		= __dirname + '/files/output';
 
 
 describe('#mergeTranslateData', function()
