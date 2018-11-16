@@ -1,61 +1,65 @@
 {
-	"en-US":
+	"version": 1,
+	"data":
 	{
-		"*":
+		"en-US":
 		{
-			"DEFAULTS":
+			"*":
 			{
-				"中文db *": "indb *"
-			},
-			"SUBTYPES":
-			{
-				"subtype":
+				"DEFAULTS":
 				{
-					"中文 allfile subtype1": "indb * subtype1",
-					"中文 thisfile subtype2": "indb * subtype2"
+					"中文db *": "indb *"
+				},
+				"SUBTYPES":
+				{
+					"subtype":
+					{
+						"中文 allfile subtype1": "indb * subtype1",
+						"中文 thisfile subtype2": "indb * subtype2"
+					}
+				}
+			},
+
+
+			"i18n_handler_example":
+			{
+				"DEFAULTS":
+				{
+					"中文0": "indb <thisfile> db0"
+				},
+				"SUBTYPES":
+				{
+					"subtype":
+					{
+						"中文 thisfile subtype2": "indb <thisfile> subtype2"
+					}
+				}
+			},
+
+			"func_code_file_key":
+			{
+				"DEFAULTS":
+				{
+					"中文 only db": "中文只在数据库"
 				}
 			}
 		},
-
-
-		"i18n_handler_example":
+		"zh-TW":
 		{
-			"DEFAULTS":
+			"*":
 			{
-				"中文0": "indb <thisfile> db0"
-			},
-			"SUBTYPES":
-			{
-				"subtype":
+				"DEFAULTS":
 				{
-					"中文 thisfile subtype2": "indb <thisfile> subtype2"
-				}
-			}
-		},
-
-		"func_code_file_key":
-		{
-			"DEFAULTS":
-			{
-				"中文 only db": "中文只在数据库"
-			}
-		}
-	},
-	"zh-TW":
-	{
-		"*":
-		{
-			"DEFAULTS":
-			{
-				"中文key": "中文键",
-				"中文 only db": "中文只在数据库",
-				"I18N(中文)": "国际化中文"
-			},
-			"SUBTYPES":
-			{
-				"subtype":
+					"中文key": "中文键",
+					"中文 only db": "中文只在数据库",
+					"I18N(中文)": "国际化中文"
+				},
+				"SUBTYPES":
 				{
-					"I18N(中文)": "中文国际化"
+					"subtype":
+					{
+						"I18N(中文)": "中文国际化"
+					}
 				}
 			}
 		}
